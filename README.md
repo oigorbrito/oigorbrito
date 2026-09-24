@@ -1,156 +1,136 @@
+<div align="center">
+
 # Igor Brito
 
 ### Backend & AI Systems Engineer
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Igor%20Brito-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/euigorbrito/)
-[![GitHub](https://img.shields.io/badge/GitHub-oigorbrito-181717?logo=github&logoColor=white)](https://github.com/oigorbrito)
+Building **backend platforms, RAG systems, AI-agent infrastructure, governance, evaluation, and reliable execution paths**.
 
-I build backend systems and AI infrastructure with a focus on **agentic systems, AI governance, RAG, distributed execution, evaluation, reliability, and evidence-driven software engineering**.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Igor%20Brito-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/euigorbrito/)
+[![GitHub](https://img.shields.io/badge/GitHub-oigorbrito-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/oigorbrito)
 
-My work spans traditional backend engineering in **C# / ASP.NET Core** and experimental AI systems in **Python and Rust**, with particular attention to explicit contracts, reproducible evidence, safe execution, and operational correctness.
+`C# / .NET` · `Python` · `Rust` · `PostgreSQL` · `FastAPI` · `RAG` · `Agentic Systems`
 
----
-
-## Featured Projects
-
-### [MetaO](https://github.com/oigorbrito/metaO)
-
-**Meta-orchestrator / control plane for pluggable agent orchestrators.**
-
-Designed to select, govern, supervise, and independently accept the work of different AI-agent runtimes without coupling the core to one framework.
-
-**Highlights**
-- framework-neutral control plane
-- runtime selection and qualification
-- policy, budget, failover, and recovery boundaries
-- durable execution and state
-- evidence normalization and independent acceptance
-- benchmark ingestion and empirical qualification
-- Python implementation with Rust migration work
-
-```text
-Mission
-  ↓
-Strategy / Selection
-  ↓
-Policy / Budget
-  ↓
-Runtime Adapter
-  ↓
-Orchestrator
-  ↓
-Evidence
-  ↓
-Independent Acceptance
-```
+</div>
 
 ---
 
-### [Rpy](https://github.com/oigorbrito/rpy)
+## What I build
 
-**RAG service for legal-process consultation and summarization.**
+I work across conventional backend engineering and AI systems, with a recurring focus on:
 
-Built with **Python, FastAPI, PostgreSQL 16, and pgvector**, with explicit security, tenancy, concurrency, provenance, and operational constraints.
+- **AI control planes & agent governance** — selection, policy, budgets, recovery, evidence, acceptance, and promotion.
+- **RAG & AI-backed products** — retrieval, provenance, factual validation, privacy boundaries, and provider integration.
+- **Reliable backend systems** — PostgreSQL, APIs, queues, concurrency, idempotency, multi-tenancy, and operational tooling.
+- **Evidence-driven engineering** — reproducible experiments, explicit failure classes, benchmark fidelity, and fail-closed decisions.
 
-**Highlights**
+My professional background includes backend development with **C# / ASP.NET Core**, while my independent engineering work extends into **Python, Rust, distributed systems, developer tooling, and AI infrastructure**.
+
+---
+
+## Featured engineering work
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🧠 [MetaO](https://github.com/oigorbrito/metaO)
+
+**Meta-orchestrator / AI control plane**
+
+Framework-neutral control plane for selecting, governing, supervising, and independently accepting work from pluggable agent orchestrators.
+
+**Engineering focus**
+
+- runtime selection & qualification
+- policy / budget boundaries
+- failover & recovery
+- durable state
+- evidence normalization
+- independent acceptance
+- benchmark ingestion
+- Python + Rust migration work
+
+**Status:** post-MVP operational baseline
+
+</td>
+<td width="50%" valign="top">
+
+### ⚖️ [Rpy](https://github.com/oigorbrito/rpy)
+
+**RAG platform for legal-process analysis**
+
+Backend system built with **FastAPI, PostgreSQL 16 and pgvector**, designed around tenant isolation, provenance, concurrency, privacy and reproducible operations.
+
+**Engineering focus**
+
 - hybrid lexical + vector retrieval
-- PostgreSQL-backed durable job queue
-- `FOR UPDATE SKIP LOCKED`, fencing, retry, heartbeat, and reclaim
-- tenant-scoped authorization
-- idempotent external callbacks
-- provider-free path for confidential processes
-- claim-level provenance and factual validation
-- Docker, migrations, CI, backup/restore, and release qualification
-- API/runtime/supply-chain hardening
+- PostgreSQL-backed job queue
+- `FOR UPDATE SKIP LOCKED`
+- fencing, retry & reclaim
+- claim-level provenance
+- confidential provider-free path
+- Docker / CI / backup & restore
+- API, runtime & supply-chain hardening
 
----
+**Status:** offline path qualified and reproducible
 
-### [SMAG](https://github.com/oigorbrito/smag)
+</td>
+</tr>
 
-**Supervised Machine Agent Governance.**
+<tr>
+<td width="50%" valign="top">
 
-A governance and control-plane layer for AI coding executors.
+### 🛡️ [SMAG](https://github.com/oigorbrito/smag)
 
-SMAG supervises permissions, isolated execution, audit, validation, evidence, and promotion instead of acting as the coding model itself.
+**Supervised Machine Agent Governance**
 
-```text
-Task
-  ↓
-Policy & Safety
-  ↓
-AI Coding Executor
-  ↓
-Isolated Staging
-  ↓
-Checks & Audit
-  ↓
-Acceptance
-  ↓
-Promote / Block
-```
+Governance layer for AI coding executors. The executor writes code; SMAG supervises permissions, isolated work, checks, evidence, acceptance, and promotion.
 
-**Highlights**
+**Engineering focus**
+
 - installable CLI
-- governed executor discovery and routing
-- isolated staging and promotion
+- executor discovery
+- governed routing
+- isolated staging
+- policy enforcement
 - explicit PASS / BLOCKED / FAILED outcomes
-- evidence-backed operational qualification
-- integration work across OpenCode, mini-SWE-agent, and SWE-agent scopes
+- evidence-backed acceptance
+- OpenCode / mini-SWE / SWE-agent scopes
 
----
+**Status:** installable governed execution product
 
-### CodePro
+</td>
+<td width="50%" valign="top">
 
-**Executor-agnostic software-engineering chassis for controlled AI-agent experiments.**
+### 🧪 CodePro
 
-CodePro explores software-agent mechanisms through explicit hypotheses, controlled treatments, reproducible workloads, and promotion only after independent acceptance.
+**Evidence-driven software-agent chassis**
 
-```text
-HYPOTHESIS
-    ↓
-IMPLEMENTATION
-    ↓
-EXECUTION
-    ↓
-VERIFICATION
-    ↓
-INDEPENDENT ACCEPTANCE
-    ↓
-PROMOTION
-```
+Executor-agnostic experimental platform for testing software-agent mechanisms through falsifiable hypotheses and reproducible evidence.
 
-**Current areas**
+**Engineering focus**
+
 - task characterization
-- progress / stagnation detection
-- bounded routing and escalation
+- progress / stagnation assessment
+- bounded routing
 - recovery decisions
 - patch verification
-- handoff and context accounting
-- executor qualification
+- context & handoff accounting
 - benchmark fidelity
-- cost / capability experiments
-- retrieval and context-memory experiments
+- executor cost / capability studies
 
-> Currently maintained in a private repository.
+**Status:** active experimental chassis · private repository
 
----
-
-## Other Engineering Projects
-
-### Podium7
-Evidence-driven automotive knowledge system for acquisition, reconciliation, provenance, review, and controlled export of multi-source data.
-
-### BPT2 / Bom Pra Ti
-Automotive product platform spanning backend, public web, PostgreSQL, HTTP integrations, recommendation/search experiments, accessibility, and evidence-based architecture decisions.
-
-### [SMAG-ReX](https://github.com/oigorbrito/smag-rex)
-Runtime qualification and experimentation work derived from the SWE-ReX ecosystem, with explicit compatibility, release, and upstream-boundary handling.
+</td>
+</tr>
+</table>
 
 ---
 
-## Engineering Principles
+## The engineering pattern behind the projects
 
-I prefer systems where implementation status, execution evidence, verification, acceptance, and promotion are treated as different states:
+A recurring rule across my systems is that **activity is not evidence of correctness**:
 
 ```text
 IMPLEMENTED != EXECUTED
@@ -159,46 +139,86 @@ VERIFIED    != ACCEPTED
 ACCEPTED    != PROMOTED
 ```
 
-That principle shows up repeatedly across my projects in testing, release qualification, runtime governance, benchmark reproduction, and architecture decisions.
+That separation shapes architecture, CI, experiments, release qualification, agent governance, and operational decisions.
+
+For agent systems, the pattern typically becomes:
+
+```text
+Request
+  ↓
+Policy / Scope / Budget
+  ↓
+Executor or Orchestrator
+  ↓
+Isolated Execution
+  ↓
+Verification
+  ↓
+Evidence
+  ↓
+Independent Acceptance
+  ↓
+Promote / Replan / Block
+```
 
 ---
 
-## Tech Stack
+## More projects
 
-**Backend**  
-`C#` · `ASP.NET Core` · `Python` · `FastAPI` · `Rust`
-
-**Data**  
-`PostgreSQL` · `pgvector` · `Prisma`
-
-**AI Engineering**  
-`RAG` · `LLMs` · `Agentic Systems` · `AI Governance` · `Evaluation` · `MCP`
-
-**Infrastructure & Engineering**  
-`Docker` · `GitHub Actions` · `CI/CD` · `REST APIs` · `Testing` · `Observability`
-
-**Frontend**  
-`TypeScript` · `Next.js`
+| Project | What it demonstrates |
+|---|---|
+| **Podium7** | Evidence-driven automotive knowledge engineering, multi-source reconciliation, identity contracts, provenance, review, and controlled export. |
+| **BPT2 / Bom Pra Ti** | Backend + public web product engineering, PostgreSQL, HTTP integration, recommendation/search experiments, accessibility, and architecture studies. |
+| **[SMAG-ReX](https://github.com/oigorbrito/smag-rex)** | Runtime qualification and experimentation derived from the SWE-ReX ecosystem, with explicit upstream, compatibility, and release boundaries. |
 
 ---
 
-## Areas of Focus
+## Stack
 
-- Backend Engineering
-- AI Engineering
-- Agentic Systems
-- Coding Agents
-- AI Governance
-- RAG
-- Distributed Systems
-- Software Architecture
-- Evaluation & Benchmarking
-- Reliability Engineering
-- Developer Tooling
+<table>
+<tr>
+<td valign="top"><strong>Backend</strong><br><br>
+<code>C#</code> <code>ASP.NET Core</code><br>
+<code>Python</code> <code>FastAPI</code><br>
+<code>Rust</code>
+</td>
+
+<td valign="top"><strong>Data</strong><br><br>
+<code>PostgreSQL</code><br>
+<code>pgvector</code><br>
+<code>Prisma</code>
+</td>
+
+<td valign="top"><strong>AI Engineering</strong><br><br>
+<code>RAG</code> <code>LLMs</code><br>
+<code>Agentic Systems</code><br>
+<code>AI Governance</code><br>
+<code>Evaluation</code> <code>MCP</code>
+</td>
+
+<td valign="top"><strong>Platform</strong><br><br>
+<code>Docker</code><br>
+<code>GitHub Actions</code><br>
+<code>CI/CD</code><br>
+<code>REST APIs</code>
+</td>
+</tr>
+</table>
 
 ---
 
-## Contact
+## Current technical focus
 
-- [LinkedIn](https://www.linkedin.com/in/euigorbrito/)
-- [GitHub](https://github.com/oigorbrito)
+`AI Systems` · `Backend Engineering` · `Agentic Infrastructure` · `RAG` · `Distributed Systems` · `Evaluation` · `Reliability` · `Developer Tooling`
+
+---
+
+<div align="center">
+
+### Contact
+
+[LinkedIn](https://www.linkedin.com/in/euigorbrito/) · [GitHub](https://github.com/oigorbrito)
+
+<sub>Building systems where “the agent said it finished” is not considered a verification strategy.</sub>
+
+</div>
