@@ -4,12 +4,12 @@
 
 ### Backend & AI Systems Engineer
 
-Building **backend platforms, RAG systems, AI-agent infrastructure, governance, evaluation, and reliable execution paths**.
+Building **reliable backend products and AI systems** with an emphasis on evidence, provenance, controlled execution, and operational clarity.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Igor%20Brito-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/euigorbrito/)
 [![GitHub](https://img.shields.io/badge/GitHub-oigorbrito-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/oigorbrito)
 
-`C# / .NET` · `Python` · `Rust` · `PostgreSQL` · `FastAPI` · `RAG` · `Agentic Systems`
+`C# / .NET` · `Python` · `PostgreSQL` · `FastAPI` · `RAG` · `AI Systems` · `Evaluation`
 
 </div>
 
@@ -17,14 +17,21 @@ Building **backend platforms, RAG systems, AI-agent infrastructure, governance, 
 
 ## What I build
 
-I work across conventional backend engineering and AI systems, with a recurring focus on:
+My project work spans conventional backend/product engineering and AI systems:
 
-- **AI control planes & agent governance** — selection, policy, budgets, recovery, evidence, acceptance, and promotion.
-- **RAG & AI-backed products** — retrieval, provenance, factual validation, privacy boundaries, and provider integration.
-- **Reliable backend systems** — PostgreSQL, APIs, queues, concurrency, idempotency, multi-tenancy, and operational tooling.
-- **Evidence-driven engineering** — reproducible experiments, explicit failure classes, benchmark fidelity, and fail-closed decisions.
+- **Backend & product systems** — APIs, domain boundaries, PostgreSQL, queues, concurrency, authentication, idempotency, integrations, CI and operational tooling.
+- **RAG & knowledge systems** — hybrid retrieval, provenance, privacy boundaries, canonical identity and reproducible ingestion.
+- **AI-agent infrastructure** — supervision, runtime qualification, policy/budget boundaries, evidence and independent acceptance.
+- **Evidence-driven engineering** — controlled comparisons, explicit failure classes, benchmark fidelity and claims limited to executed evidence.
 
-My professional background includes backend development with **C# / ASP.NET Core**, while my independent engineering work extends into **Python, Rust, distributed systems, developer tooling, and AI infrastructure**.
+A recurring rule across the projects is simple:
+
+```text
+IMPLEMENTED != EXECUTED
+EXECUTED    != VERIFIED
+VERIFIED    != ACCEPTED
+ACCEPTED    != PROMOTED
+```
 
 ---
 
@@ -34,31 +41,64 @@ My professional background includes backend development with **C# / ASP.NET Core
 <tr>
 <td width="50%" valign="top">
 
-### 🧠 [MetaO](https://github.com/oigorbrito/metaO)
+### 🚗 BPT2 + Podium7
 
-**Meta-orchestrator / AI control plane**
+**Automotive marketplace + knowledge platform**
 
-Framework-neutral control plane for selecting, governing, supervising, and independently accepting work from pluggable agent orchestrators.
+Two bounded systems working together: **Podium7** produces reconciled automotive knowledge and provenance; **BPT2** consumes versioned contracts into its canonical catalog and marketplace.
 
-**Engineering focus**
+**BPT2 engineering**
 
-- runtime selection & qualification
-- policy / budget boundaries
-- failover & recovery
-- durable state
-- evidence normalization
-- independent acceptance
-- benchmark ingestion
-- Python + Rust migration work
+- .NET 10 / ABP 10.6 modular monolith
+- PostgreSQL 17 + Next.js public web
+- OIDC Authorization Code + PKCE
+- Seller / Buyer / Listing / Lead workflows
+- optimistic concurrency and ownership boundaries
+- durable PostgreSQL work queues with `FOR UPDATE SKIP LOCKED`
+- idempotent retry / delivery / webhook paths
 
-**Status:** post-MVP operational baseline
+**Podium7 integration**
+
+- multi-source reconciliation and provenance
+- producer-owned external identity
+- versioned feed contracts
+- real `Podium7 -> HTTP -> BPT2 -> PostgreSQL` integration path
+- repository-topology decisions evaluated with measured evidence
+
+**Status:** BPT2 post-MVP operational baseline · private source
 
 </td>
 <td width="50%" valign="top">
 
+### 🧪 [CodePro](https://github.com/oigorbrito/codepro)
+
+**Evidence-driven software-agent chassis**
+
+Executor-agnostic engineering chassis for testing software-agent mechanisms through explicit contracts, falsifiable hypotheses and reproducible evidence.
+
+**Engineering focus**
+
+- deterministic task characterization
+- progress / stagnation assessment
+- bounded routing and escalation
+- execution telemetry
+- explicit scope / authority / budget contracts
+- executor qualification separate from availability
+- patch verification and evidence persistence
+- independent acceptance
+- preregistered experimental protocols
+
+**Status:** active empirical chassis · real-task executor validation is the next evidence boundary
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
 ### ⚖️ [Rpy](https://github.com/oigorbrito/rpy)
 
-**RAG platform for legal-process analysis**
+**RAG backend for legal-process analysis**
 
 Backend system built with **FastAPI, PostgreSQL 16 and pgvector**, designed around tenant isolation, provenance, concurrency, privacy and reproducible operations.
 
@@ -67,60 +107,35 @@ Backend system built with **FastAPI, PostgreSQL 16 and pgvector**, designed arou
 - hybrid lexical + vector retrieval
 - PostgreSQL-backed job queue
 - `FOR UPDATE SKIP LOCKED`
-- fencing, retry & reclaim
-- claim-level provenance
-- confidential provider-free path
+- fencing, retry and reclaim
+- claim/source provenance
+- confidential provider-free execution path
 - Docker / CI / backup & restore
-- API, runtime & supply-chain hardening
+- API and runtime hardening
 
 **Status:** offline path qualified and reproducible
 
 </td>
-</tr>
-
-<tr>
 <td width="50%" valign="top">
 
-### 🛡️ [SMAG](https://github.com/oigorbrito/smag)
+### 🧠 [MetaO](https://github.com/oigorbrito/metaO)
 
-**Supervised Machine Agent Governance**
+**Meta-orchestrator / AI control plane**
 
-Governance layer for AI coding executors. The executor writes code; SMAG supervises permissions, isolated work, checks, evidence, acceptance, and promotion.
+Framework-neutral control plane for selecting, governing, supervising and independently accepting work from pluggable agent orchestrators.
 
 **Engineering focus**
 
-- installable CLI
-- executor discovery
-- governed routing
-- isolated staging
-- policy enforcement
-- explicit PASS / BLOCKED / FAILED outcomes
-- evidence-backed acceptance
-- OpenCode / mini-SWE / SWE-agent scopes
+- runtime admission, selection and qualification
+- policy / budget boundaries
+- durable mission state
+- fencing, restart and recovery
+- framework adapters
+- evidence normalization
+- independent acceptance
+- runtime certification / revocation
 
-**Status:** installable governed execution product
-
-</td>
-<td width="50%" valign="top">
-
-### 🧪 CodePro
-
-**Evidence-driven software-agent chassis**
-
-Executor-agnostic experimental platform for testing software-agent mechanisms through falsifiable hypotheses and reproducible evidence.
-
-**Engineering focus**
-
-- task characterization
-- progress / stagnation assessment
-- bounded routing
-- recovery decisions
-- patch verification
-- context & handoff accounting
-- benchmark fidelity
-- executor cost / capability studies
-
-**Status:** active experimental chassis · private repository
+**Status:** post-MVP operational baseline
 
 </td>
 </tr>
@@ -128,48 +143,39 @@ Executor-agnostic experimental platform for testing software-agent mechanisms th
 
 ---
 
-## The engineering pattern behind the projects
-
-A recurring rule across my systems is that **activity is not evidence of correctness**:
-
-```text
-IMPLEMENTED != EXECUTED
-EXECUTED    != VERIFIED
-VERIFIED    != ACCEPTED
-ACCEPTED    != PROMOTED
-```
-
-That separation shapes architecture, CI, experiments, release qualification, agent governance, and operational decisions.
-
-For agent systems, the pattern typically becomes:
-
-```text
-Request
-  ↓
-Policy / Scope / Budget
-  ↓
-Executor or Orchestrator
-  ↓
-Isolated Execution
-  ↓
-Verification
-  ↓
-Evidence
-  ↓
-Independent Acceptance
-  ↓
-Promote / Replan / Block
-```
-
----
-
-## More projects
+## Additional engineering
 
 | Project | What it demonstrates |
 |---|---|
-| **Podium7** | Evidence-driven automotive knowledge engineering, multi-source reconciliation, identity contracts, provenance, review, and controlled export. |
-| **BPT2 / Bom Pra Ti** | Backend + public web product engineering, PostgreSQL, HTTP integration, recommendation/search experiments, accessibility, and architecture studies. |
-| **[SMAG-ReX](https://github.com/oigorbrito/smag-rex)** | Runtime qualification and experimentation derived from the SWE-ReX ecosystem, with explicit upstream, compatibility, and release boundaries. |
+| **[RJ](https://github.com/oigorbrito/RJ)** | .NET 10 / C# 14, ASP.NET Core, modular monolith boundaries, architecture tests, deterministic build and legal RAG work. |
+| **SMAG** | Installable governance layer for coding executors: permissions, isolated work, explicit outcomes, evidence and acceptance. Private source. |
+| **[NDV](https://github.com/oigorbrito/NDV)** | Research program on minimum-sufficient capability composition and the verified-success / cost / latency frontier. Research-only by design. |
+| **NaIA** | Product/research track around intent, planning, policy, tools, execution and persisted evidence. Private source. |
+| **MEDVI** | Full-stack product work with Next.js, PostgreSQL/Prisma, authentication, payments, security hardening and tested failure paths. Private source. |
+
+---
+
+## Engineering approach
+
+I try to keep architecture subordinate to evidence rather than the other way around:
+
+```text
+problem
+  ↓
+explicit hypothesis / invariant
+  ↓
+smallest useful implementation
+  ↓
+execution
+  ↓
+verification
+  ↓
+evidence
+  ↓
+keep / change / remove
+```
+
+For AI systems, executor output is treated as an observation, not as acceptance authority. For conventional backend systems, the same discipline appears in ownership boundaries, idempotency, concurrency tests, migration gates and explicit external-side-effect semantics.
 
 ---
 
@@ -178,29 +184,31 @@ Promote / Replan / Block
 <table>
 <tr>
 <td valign="top"><strong>Backend</strong><br><br>
-<code>C#</code> <code>ASP.NET Core</code><br>
+<code>C#</code> <code>.NET</code> <code>ASP.NET Core</code><br>
+<code>ABP</code><br>
 <code>Python</code> <code>FastAPI</code><br>
-<code>Rust</code>
+<code>TypeScript</code> <code>Next.js</code>
 </td>
 
 <td valign="top"><strong>Data</strong><br><br>
 <code>PostgreSQL</code><br>
 <code>pgvector</code><br>
-<code>Prisma</code>
+<code>EF Core</code> <code>Prisma</code><br>
+<code>SQL</code>
 </td>
 
 <td valign="top"><strong>AI Engineering</strong><br><br>
 <code>RAG</code> <code>LLMs</code><br>
-<code>Agentic Systems</code><br>
-<code>AI Governance</code><br>
-<code>Evaluation</code> <code>MCP</code>
+<code>Agent Systems</code><br>
+<code>Governance</code><br>
+<code>Evaluation</code> <code>Benchmarks</code>
 </td>
 
 <td valign="top"><strong>Platform</strong><br><br>
 <code>Docker</code><br>
 <code>GitHub Actions</code><br>
 <code>CI/CD</code><br>
-<code>REST APIs</code>
+<code>Linux</code> <code>Git</code>
 </td>
 </tr>
 </table>
@@ -209,7 +217,7 @@ Promote / Replan / Block
 
 ## Current technical focus
 
-`AI Systems` · `Backend Engineering` · `Agentic Infrastructure` · `RAG` · `Distributed Systems` · `Evaluation` · `Reliability` · `Developer Tooling`
+`Backend Engineering` · `AI Systems` · `RAG` · `Agent Infrastructure` · `Distributed Systems` · `Evaluation` · `Reliability`
 
 ---
 
