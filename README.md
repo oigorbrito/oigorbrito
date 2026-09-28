@@ -149,9 +149,9 @@ Framework-neutral control plane for selecting, governing, supervising and indepe
 |---|---|
 | **[RJ](https://github.com/oigorbrito/RJ)** | .NET 10 / C# 14, ASP.NET Core, modular monolith boundaries, architecture tests, deterministic build and legal RAG work. |
 | **SMAG** | Installable governance layer for coding executors: permissions, isolated work, explicit outcomes, evidence and acceptance. Private source. |
-| **[NDV](https://github.com/oigorbrito/NDV)** | Research program on minimum-sufficient capability composition and the verified-success / cost / latency frontier. Research-only by design. |
-| **NaIA** | Product/research track around intent, planning, policy, tools, execution and persisted evidence. Private source. |
-| **MEDVI** | Full-stack product work with Next.js, PostgreSQL/Prisma, authentication, payments, security hardening and tested failure paths. Private source. |
+| **[NDV](https://github.com/oigorbrito/NDV)** | Research program on minimum-sufficient capability composition and the verified-success / cost / latency frontier. Current engineering mode: `REUSE_ONLY`; no NDV runtime architecture is approved. |
+| **NaIA** | User-facing governed capability platform: intent → plan → policy/approval → tools/providers → evidence → resumable state. Includes live-provider adapters, while live validation remains credential/environment scoped. Private source. |
+| **MEDVI** | Full-stack health product with Next.js, PostgreSQL/Prisma, auth, Stripe checkout/webhook recovery, rate limiting, CSP and staged operational rollout. Production promotion remains unauthorized pending remaining environment gates. Private source. |
 
 ---
 
