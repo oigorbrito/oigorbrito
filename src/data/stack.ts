@@ -12,74 +12,73 @@ export interface StackCategory {
 export const STACK_DATA: StackCategory[] = [
   {
     title: 'Backend Systems',
-    badge: 'Core Foundation',
+    badge: 'Applied Work',
     color: 'emerald',
     items: [
-      { name: 'C# / .NET', level: 'Production', details: 'ASP.NET Core, resilient microservices, high-throughput APIs, enterprise architecture' },
-      { name: 'Python', level: 'Primary AI & Data', details: 'FastAPI, async runtimes, orchestrator control planes, evaluation pipelines' },
-      { name: 'Rust', level: 'High Performance', details: 'High-throughput boundary validation, zero-copy evidence hashing, systems-level migration' },
-      { name: 'REST APIs', level: 'Standard', details: 'Idempotent endpoints, contract-first OpenAPI schemas, versioned boundaries' }
+      { name: 'C# / .NET', level: 'Applied', details: 'ASP.NET Core, .NET 10, ABP, modular boundaries, architecture tests, APIs and domain workflows' },
+      { name: 'Python', level: 'Applied', details: 'FastAPI, RAG services, control-plane/runtime tooling, evaluation and data-processing paths' },
+      { name: 'TypeScript / Next.js', level: 'Applied', details: 'Public web/product surfaces, API integration, validation, auth and frontend/backend boundaries' },
+      { name: 'Rust', level: 'Systems Work', details: 'Used in MetaO architecture and migration experiments where a systems-level boundary is useful' }
     ]
   },
   {
     title: 'Data & Persistence',
-    badge: 'ACID & Vector',
+    badge: 'Concurrency & Provenance',
     color: 'cyan',
     items: [
-      { name: 'PostgreSQL 16', level: 'Deep Expertise', details: 'FOR UPDATE SKIP LOCKED queues, complex indexing, partitioning, concurrency & fencing' },
-      { name: 'pgvector', level: 'Vector Search', details: 'HNSW indexing, hybrid lexical + vector retrieval, cosine similarity at scale' },
-      { name: 'Prisma / ORMs', level: 'Data Modeling', details: 'Type-safe schema definitions, deterministic migrations, connection pooling' },
-      { name: 'Backup & Restore', level: 'Reliability', details: 'Point-in-time recovery, WAL archiving, tenant data fencing' }
+      { name: 'PostgreSQL', level: 'Core', details: 'Transactional workflows, FOR UPDATE SKIP LOCKED queues, optimistic concurrency, migrations and durable state' },
+      { name: 'pgvector', level: 'RAG', details: 'Vector retrieval combined with lexical search in legal-process analysis' },
+      { name: 'EF Core / ABP', level: '.NET Data', details: 'Module-owned persistence and reproducible fresh-database/migration gates in BPT2' },
+      { name: 'Prisma', level: 'Product Data', details: 'TypeScript product data modeling and migrations in full-stack work such as MEDVI' }
     ]
   },
   {
-    title: 'AI Engineering & Governance',
-    badge: 'System Architecture',
+    title: 'AI Engineering',
+    badge: 'Evidence & Control',
     color: 'amber',
     items: [
-      { name: 'RAG Systems', level: 'Production Focus', details: 'Claim-level provenance, hybrid lexical+vector retrieval, privacy boundaries, offline paths' },
-      { name: 'Agentic Systems', level: 'Infrastructure', details: 'Orchestrators, supervision layers, stagnation detection, bounded loops' },
-      { name: 'AI Governance', level: 'Architecture Rule', details: 'Supervisor/executor split, fail-closed policy gates, independent acceptance' },
-      { name: 'Evaluation & Benchmarking', level: 'Falsifiable', details: 'Falsifiable hypotheses, benchmark fidelity, SWE-bench & SWE-ReX scopes' },
-      { name: 'MCP (Model Context Protocol)', level: 'Tooling', details: 'Safe tool interfaces, bounded context injection, capability sandboxing' }
+      { name: 'RAG Systems', level: 'Applied', details: 'Retrieval, provenance, privacy boundaries, provider-free paths and reproducible evaluation' },
+      { name: 'Agent Infrastructure', level: 'Research + Product', details: 'Executor supervision, runtime qualification, policy/budget boundaries and controlled execution' },
+      { name: 'Evaluation', level: 'Empirical', details: 'Falsifiable hypotheses, frozen workloads, benchmark fidelity, run provenance and explicit failure classes' },
+      { name: 'Knowledge Systems', level: 'Applied', details: 'Multi-source reconciliation, canonical identity, provenance and controlled producer/consumer contracts' }
     ]
   },
   {
     title: 'Platform & Operations',
-    badge: 'Infrastructure',
+    badge: 'Reproducibility',
     color: 'purple',
     items: [
-      { name: 'Docker', level: 'Containerization', details: 'Reproducible multi-stage builds, isolated execution sandboxes, cgroup resource limits' },
-      { name: 'GitHub Actions / CI/CD', level: 'Automation', details: 'Fail-closed verification gates, reproducible test matrices, supply-chain security' },
-      { name: 'Linux & Bash Plumb', level: 'Systems', details: 'Process isolation, cgroups, file descriptors, git plumbing commands' },
-      { name: 'Operational Tooling', level: 'Observability', details: 'Audit journals, structured telemetry, cryptographic evidence verification' }
+      { name: 'Docker', level: 'Environment', details: 'Reproducible local/runtime environments and isolated validation paths where required' },
+      { name: 'GitHub Actions', level: 'CI', details: 'Test matrices, path-scoped workflows, exact-head validation and evidence-preserving gates' },
+      { name: 'Git', level: 'Engineering Workflow', details: 'Branch/PR workflows, clean-revision execution contracts, repository topology studies and controlled promotion' },
+      { name: 'Operational Tooling', level: 'Reliability', details: 'Doctor commands, structured evidence, backup/restore paths, retry/recovery and explicit readiness boundaries' }
     ]
   }
 ];
 
 export const PHILOSOPHY_PRINCIPLES = [
   {
-    title: 'Activity != Evidence of Correctness',
+    title: 'Claim Scope <= Evidence Scope',
     equation: 'IMPLEMENTED != EXECUTED != VERIFIED != ACCEPTED != PROMOTED',
-    description: 'Just because an agent outputted code or claimed completion does not mean it executed; execution does not imply deterministic verification; verification does not imply independent acceptance by an external policy engine; acceptance does not imply safe promotion to production.',
-    tag: 'Core Axiom'
+    description: 'A feature, benchmark, workflow, or agent result is described only at the evidence level actually exercised. Local success is not silently promoted into production or external-validity claims.',
+    tag: 'Core Rule'
   },
   {
-    title: 'Supervisor / Executor Separation',
-    equation: 'SUPERVISOR(Isolated_Sandbox(EXECUTOR))',
-    description: 'Never permit the model that generates code or makes decisions to be the entity that approves its own promotion. The executor is treated as an untrusted worker supervised by an immutable policy runtime.',
+    title: 'Execution Authority != Acceptance Authority',
+    equation: 'EXECUTOR_DONE != SYSTEM_ACCEPTED',
+    description: 'In agent systems, executors provide work and observations; verification and acceptance remain separate boundaries whenever the risk justifies that separation.',
     tag: 'Governance'
   },
   {
-    title: 'Claim-Level Provenance over Faith',
-    equation: 'CITATION ∈ EXACT_SPAN(DOC_HASH)',
-    description: 'In RAG and knowledge systems, every factual assertion must trace to an immutable byte span or paragraph bounding box. If provenance cannot be verified, the claim fails closed.',
-    tag: 'RAG Architecture'
+    title: 'Reuse Before Custom Infrastructure',
+    equation: 'REUSE -> ADAPT -> WRAP -> FORK -> BUILD',
+    description: 'Existing platform, framework, and open-source capabilities are evaluated before adding custom infrastructure. A new layer is expected to pay for its own operational and maintenance cost.',
+    tag: 'Engineering Economy'
   },
   {
-    title: 'PostgreSQL SKIP LOCKED over Heavy Brokers',
-    equation: 'SELECT ... FOR UPDATE SKIP LOCKED',
-    description: 'Avoid unnecessary operational complexity. Concurrency-safe job queues with heartbeats, fencing tokens, and orphan reclamation can be implemented with native ACID reliability directly in PostgreSQL.',
-    tag: 'Backend Reliability'
+    title: 'Architecture Is Reopenable',
+    equation: 'DECISION + NEW_EVIDENCE -> REASSESS',
+    description: 'Repository topology, runtime selection, routing, decomposition, and other architecture choices are treated as bounded decisions under current evidence rather than permanent truths.',
+    tag: 'Empirical Engineering'
   }
 ];
