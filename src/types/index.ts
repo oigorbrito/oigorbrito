@@ -3,7 +3,7 @@ export interface Project {
   name: string;
   icon: string;
   subtitle: string;
-  category: 'Control Plane' | 'RAG & Data' | 'Governance' | 'Experimental Chassis' | 'Domain Engineering';
+  category: 'Control Plane' | 'RAG & Data' | 'Governance' | 'Experimental Chassis' | 'Domain Engineering' | 'Product Engineering';
   description: string;
   githubUrl?: string;
   status: string;
