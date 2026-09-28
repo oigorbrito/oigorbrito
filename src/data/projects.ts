@@ -250,29 +250,59 @@ export const OTHER_PROJECTS: Project[] = [
     techStack: ['Research Harnesses', 'AI Evaluation', 'Cost Accounting', 'CI']
   },
   {
+    id: 'naia',
+    name: 'NaIA',
+    icon: '🧭',
+    subtitle: 'Governed user-facing capability platform',
+    category: 'Product Engineering',
+    description: 'Turns user intent into governed, resumable actions across local tools and external-provider adapters while keeping intent, authorization, execution, and evidence as separate boundaries.',
+    status: 'active private product · live validation remains provider/environment scoped',
+    badgeColor: 'cyan',
+    engineeringFocus: [
+      'intent -> plan -> tool/provider selection',
+      'risk classes and explicit approval',
+      'append-only execution evidence',
+      'resumable persisted objectives',
+      'Gmail / Drive / Calendar / Photos adapters',
+      'Slack / WhatsApp / Belvo boundaries',
+      'provider-neutral model adapters',
+      'web/server product surface'
+    ],
+    architectureHighlights: [
+      {
+        title: 'Intent Is Not Authorization',
+        description: 'The intent layer interprets user requests but does not own approval or side-effect authority; ambiguous and incomplete requests fail closed before execution.',
+        badge: 'Governed Capability'
+      }
+    ],
+    techStack: ['Node.js', 'JavaScript', 'Provider Adapters', 'OAuth', 'Policy', 'Local Persistence']
+  },
+  {
     id: 'medvi',
     name: 'MEDVI',
     icon: '🏥',
     subtitle: 'Full-stack health product engineering',
-    category: 'Domain Engineering',
-    description: 'Product work spanning Next.js, PostgreSQL/Prisma, authentication, payments, security controls, and tested failure paths.',
-    status: 'active private product',
+    category: 'Product Engineering',
+    description: 'Next.js health product with PostgreSQL/Prisma, signed-session auth, Stripe checkout/webhooks, lease-based retry/recovery, rate-limit hardening, CSP, and staged operational rollout.',
+    status: 'active private product · production promotion not authorized',
     badgeColor: 'teal',
     engineeringFocus: [
-      'Next.js product surfaces',
+      'Next.js / React product surfaces',
       'PostgreSQL / Prisma',
-      'authentication and rate limiting',
-      'Stripe payment flows and webhook recovery',
+      'authentication, ownership and role freshness',
+      'Stripe checkout / PaymentIntent / webhooks',
+      'lease-based retry and dead-letter recovery',
+      'distributed rate-limit hardening',
       'security headers / CSP',
-      'tested failure and recovery paths'
+      'health, readiness and rollout gates'
     ],
     architectureHighlights: [
       {
-        title: 'Product Failure Paths',
-        description: 'Recent work includes payment webhook recovery, rate-limit hardening, identity canonicalization, and security-policy regression tests.',
-        badge: 'Product Engineering'
+        title: 'External Effects and Recovery',
+        description: 'Payment/webhook processing uses idempotency, explicit leases, retry, reaping, and dead-letter state rather than assuming one-shot serverless execution.',
+        badge: 'Product Reliability'
       }
     ],
-    techStack: ['TypeScript', 'Next.js', 'PostgreSQL', 'Prisma', 'Stripe', 'Security']
+    techStack: ['TypeScript', 'Next.js 15', 'React 19', 'PostgreSQL', 'Prisma', 'Stripe']
   }
 ];
