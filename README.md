@@ -4,7 +4,7 @@
 
 ### Backend & AI Systems Engineer
 
-Building **reliable backend products and AI systems** with an emphasis on evidence, provenance, controlled execution, and operational clarity.
+Building **reliable backend products and AI infrastructure** with an emphasis on evidence, provenance, controlled execution, independent acceptance, and operational continuity.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Igor%20Brito-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/euigorbrito/)
 [![GitHub](https://img.shields.io/badge/GitHub-oigorbrito-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/oigorbrito)
@@ -15,16 +15,13 @@ Building **reliable backend products and AI systems** with an emphasis on eviden
 
 ---
 
-## What I build
+## Professional profile
 
-My project work spans conventional backend/product engineering and AI systems:
+Backend and AI systems engineer working across **product engineering, RAG, agent infrastructure, distributed execution, and evidence-driven evaluation**.
 
-- **Backend & product systems** — APIs, domain boundaries, PostgreSQL, queues, concurrency, authentication, idempotency, integrations, CI and operational tooling.
-- **RAG & knowledge systems** — hybrid retrieval, provenance, privacy boundaries, canonical identity and reproducible ingestion.
-- **AI-agent infrastructure** — supervision, runtime qualification, policy/budget boundaries, evidence and independent acceptance.
-- **Evidence-driven engineering** — controlled comparisons, explicit failure classes, benchmark fidelity and claims limited to executed evidence.
+My work focuses on systems where correctness cannot be inferred from implementation alone. I design explicit contracts for ownership, execution, verification, acceptance, recovery, and external side effects, then use tests and runtime evidence to establish what is actually demonstrated.
 
-A recurring rule across the projects is simple:
+A recurring rule across the projects is:
 
 ```text
 IMPLEMENTED != EXECUTED
@@ -32,6 +29,15 @@ EXECUTED    != VERIFIED
 VERIFIED    != ACCEPTED
 ACCEPTED    != PROMOTED
 ```
+
+---
+
+## What I build
+
+- **Backend & product systems** — APIs, domain boundaries, PostgreSQL, queues, concurrency, authentication, idempotency, integrations, CI/CD and operational tooling.
+- **RAG & knowledge systems** — hybrid retrieval, provenance, privacy boundaries, canonical identity and reproducible ingestion.
+- **AI-agent infrastructure** — runtime admission, qualification, supervision, policy/budget boundaries, durable state, fencing, recovery and independent acceptance.
+- **Evidence-driven engineering** — controlled comparisons, falsifiable hypotheses, benchmark fidelity, explicit failure classes and claims limited to executed evidence.
 
 ---
 
@@ -56,6 +62,8 @@ Two bounded systems working together: **Podium7** produces reconciled automotive
 - optimistic concurrency and ownership boundaries
 - durable PostgreSQL work queues with `FOR UPDATE SKIP LOCKED`
 - idempotent retry / delivery / webhook paths
+- security headers, redirect hardening and public-web accessibility baseline
+- hosted staging bootstrap and controlled visual Pages preview
 
 **Podium7 integration**
 
@@ -65,7 +73,7 @@ Two bounded systems working together: **Podium7** produces reconciled automotive
 - real `Podium7 -> HTTP -> BPT2 -> PostgreSQL` integration path
 - repository-topology decisions evaluated with measured evidence
 
-**Status:** BPT2 post-MVP operational baseline · private source
+**Status:** BPT2 post-MVP operational baseline · hosted staging acceptance is the current evidence boundary · private source
 
 </td>
 <td width="50%" valign="top">
@@ -87,8 +95,10 @@ Executor-agnostic engineering chassis for testing software-agent mechanisms thro
 - patch verification and evidence persistence
 - independent acceptance
 - preregistered experimental protocols
+- chassis shootout runner contract and hosted-runner evidence
+- security hardening and environment verification tooling
 
-**Status:** active empirical chassis · real-task executor validation is the next evidence boundary
+**Status:** active empirical chassis · implementation gate for the shootout runner is closed · real-task executor validation remains the next evidence boundary
 
 </td>
 </tr>
@@ -128,14 +138,15 @@ Framework-neutral control plane for selecting, governing, supervising and indepe
 
 - runtime admission, selection and qualification
 - policy / budget boundaries
-- durable mission state
-- fencing, restart and recovery
-- framework adapters
-- evidence normalization
-- independent acceptance
+- durable mission and Project Plane state
+- owner fencing before external mutation
+- crash-safe continuity and process takeover
+- duplicate-effect reconciliation
+- fail-closed acceptance semantics
+- evidence normalization and independent acceptance
 - runtime certification / revocation
 
-**Status:** post-MVP operational baseline
+**Status:** advanced operational baseline · 23-gate Project Plane release battery recorded · integrated hosted validation remains an evidence boundary
 
 </td>
 </tr>
@@ -157,7 +168,7 @@ Framework-neutral control plane for selecting, governing, supervising and indepe
 
 ## Engineering approach
 
-I try to keep architecture subordinate to evidence rather than the other way around:
+I keep architecture subordinate to evidence rather than the other way around:
 
 ```text
 problem
@@ -175,7 +186,7 @@ evidence
 keep / change / remove
 ```
 
-For AI systems, executor output is treated as an observation, not as acceptance authority. For conventional backend systems, the same discipline appears in ownership boundaries, idempotency, concurrency tests, migration gates and explicit external-side-effect semantics.
+For AI systems, executor output is treated as an observation, not as acceptance authority. For conventional backend systems, the same discipline appears in ownership boundaries, idempotency, concurrency tests, migration gates, security controls and explicit external-side-effect semantics.
 
 ---
 
@@ -217,7 +228,7 @@ For AI systems, executor output is treated as an observation, not as acceptance 
 
 ## Current technical focus
 
-`Backend Engineering` · `AI Systems` · `RAG` · `Agent Infrastructure` · `Distributed Systems` · `Evaluation` · `Reliability`
+`Backend Engineering` · `AI Systems` · `RAG` · `Agent Infrastructure` · `Distributed Systems` · `Evaluation` · `Reliability` · `Operational Continuity`
 
 ---
 
